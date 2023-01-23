@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lobster&display=swap');
+*{
+font-family: 'Lobster', cursive;
+
+}
+
+.containerBig {
+  background: #01A892;
+  position: absolute;
+  top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+    padding-top: 20px;
+    
+}
+
+.containerS{
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+  position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:85%;
+    width:90%;
+    margin:auto; 
+  
+}
+
+
+.header{
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  color: rgb(85, 34, 107)
+}
+
+.underHeader {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  color: rgb(215, 112, 23)
+}
+
+/* .bubble{
+  display: flex;
+  justify-content:flex-end;
+  gap: 25rem;
+   margin: auto;
+ 
+} */
+
+.images{
+  display:flex;
+  justify-content: space-between;
+}
+
+.img{
+ width: 200px;
+ height: auto;
+ border-radius: 30px;
+ margin: 2rem;
+ 
+}
+
+.text{
+  font-family: 'Crimson Text', serif;
+  color: gray;
+}
+
+
