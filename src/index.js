@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import Play from './components/Play/Play';
 import Learn from './components/Learn/Learn';
-import Datafetching from './components/DataFetching';
+import Datafetching from './components/ScoreFetching';
 
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router,Routes ,Route} from 'react-router-dom';
