@@ -20,7 +20,7 @@ const Navbar = () => {
           <Link to="/learn">Learn</Link>
         </li>
         <li>
-          <Link to="/DataFetching">Score</Link>
+          <Link to="/Scorefetching">Score</Link>
         </li>
         <li>
           <Link to="/contact">Contactss</Link>

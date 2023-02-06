@@ -15,7 +15,7 @@ root.render(
   <Routes>
     <Route path='/' element= {<App/>}/>
     <Route path="/play" element= {<Play/>}/>
-    <Route path="/DataFetching" element= {<Datafetching/>}/>
+    <Route path="/Scorefetching" element= {<Scorefetching/>}/>
 
     <Route path="/learn" element= {<Learn/>}/>
   </Routes>
