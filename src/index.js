@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import Play from './components/Play/Play';
 import Learn from './components/Learn/Learn';
+import Datafetching from './components/DataFetching';
+
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router,Routes ,Route} from 'react-router-dom';
 
@@ -13,6 +15,8 @@ root.render(
   <Routes>
     <Route path='/' element= {<App/>}/>
     <Route path="/play" element= {<Play/>}/>
+    <Route path="/DataFetching" element= {<Datafetching/>}/>
+
     <Route path="/learn" element= {<Learn/>}/>
   </Routes>
  </Router>

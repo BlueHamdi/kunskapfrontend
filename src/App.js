@@ -4,6 +4,8 @@ import Divider from './components/Divider/Divider';
 import Pic1 from './Images/Bild1.png';
 import Pic2 from './Images/Bild2.png';
 import Bubble from './Images/Bubble.svg';
+import Datafetching from './components/DataFetching';
+
 
 
 function App() {
@@ -29,19 +31,21 @@ function App() {
           <img className={styles.img}  src={Pic2}/>
         </div>
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
-     
+
   );
 }
 
