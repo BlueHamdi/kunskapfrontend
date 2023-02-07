@@ -5,6 +5,7 @@ import App from './App';
 import Play from './components/Play/Play';
 import Learn from './components/Learn/Learn';
 import Datafetching from './components/ScoreFetching';
+import Contact from './components/Contact/Contact';
 
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router,Routes ,Route} from 'react-router-dom';
@@ -18,6 +19,7 @@ root.render(
     <Route path="/ScoreFetching" element= {<Datafetching/>}/>
 
     <Route path="/learn" element= {<Learn/>}/>
+    <Route path="/Contact" element= {<Contact/>}/>
   </Routes>
  </Router>
 );
