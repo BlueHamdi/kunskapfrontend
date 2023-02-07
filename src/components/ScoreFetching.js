@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import './Scorefetching.css';
 
+
+
 function Scorefetching() {
   const [posts, setPosts] = useState([]);
 
@@ -25,7 +27,8 @@ function Scorefetching() {
       <section id="leaderboard">
         <nav className="ladder-nav">
           <div className="ladder-title">
-            <h1>Standings</h1>
+            
+            <h1>Higscore List</h1>
           </div>
         </nav>
         <table id="rankings" className="leaderboard-results" width="100%">
