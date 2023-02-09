@@ -3,26 +3,34 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Play from './components/Play/Play';
-import Learn from './components/Learn/Learn';
-import Datafetching from './components/ScoreFetching';
+import ScoreFetching from './components/ScoreFetching';
 import Contact from './components/Contact/Contact';
-
+import Instruction from './components/Instruction/Instruction';
+import Quiz from './components/Quiz/Quiz';
 import reportWebVitals from './reportWebVitals';
+import About from './components/About/About';
 import { BrowserRouter as Router,Routes ,Route} from 'react-router-dom';
+import Practice from './components/Practice/Practice';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <Router>
   <Routes>
+  <Route exact path="/instruction" element={<Instruction/>} />
+    <Route path="/quiz" element={<Quiz/>} />
+    <Route path="/contact" element={<Contact/>} />
+    <Route path="/score" element={<ScoreFetching/>} />
+    <Route exact path="/practice" element={<Practice/>} />
+    <Route path="/instruction" element={<Instruction/>} />
     <Route path='/' element= {<App/>}/>
     <Route path="/play" element= {<Play/>}/>
-    <Route path="/ScoreFetching" element= {<Datafetching/>}/>
-
-    <Route path="/learn" element= {<Learn/>}/>
-    <Route path="/Contact" element= {<Contact/>}/>
+    <Route path="/practice" element= {<Practice/>}/>
+    <Route path= "contact" element= {<Contact/>}/>
+    <Route path="/about" element= {<About/>}/>
   </Routes>
  </Router>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
