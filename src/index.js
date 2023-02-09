@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Play from './components/Play/Play';
-import ScoreFetching from './components/ScoreFetching';
+
 import Contact from './components/Contact/Contact';
 import Instruction from './components/Instruction/Instruction';
 import Quiz from './components/Quiz/Quiz';
+import Scorefetching from './components/ScoreFetching';
+
 import reportWebVitals from './reportWebVitals';
 import About from './components/About/About';
 import { BrowserRouter as Router,Routes ,Route} from 'react-router-dom';
@@ -19,7 +21,8 @@ root.render(
   <Route exact path="/instruction" element={<Instruction/>} />
     <Route path="/quiz" element={<Quiz/>} />
     <Route path="/contact" element={<Contact/>} />
-    <Route path="/score" element={<ScoreFetching/>} />
+     <Route path="/Scorefetching" element={<Scorefetching/>} />
+
     <Route exact path="/practice" element={<Practice/>} />
     <Route path="/instruction" element={<Instruction/>} />
     <Route path='/' element= {<App/>}/>
