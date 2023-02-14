@@ -1,7 +1,24 @@
-import React from 'react';
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import './Contact.css';
 
-const Contact = () => {
+
+function Contact() {
+    const [posts, setPosts] = useState([]);
+  
+    useEffect(() => {
+      axios
+        .get("http://localhost:8000/api/contact")
+        .then(response => {
+          console.log(response.data.Contact);
+          setPosts(response.data.Contact);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }, []);
+    
+
   return (
     <div className="contact-info-container">
       <h2 className="contact-info-header">Contact Us</h2>
