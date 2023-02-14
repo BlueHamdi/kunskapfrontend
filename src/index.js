@@ -7,12 +7,13 @@ import Play from './components/Play/Play';
 import Contact from './components/Contact/Contact';
 import Instruction from './components/Instruction/Instruction';
 import Quiz from './components/Quiz/Quiz';
-import Scorefetching from './components/ScoreFetching';
+import Scorefetching from './components/Highscore/ScoreFetching';
 
 import reportWebVitals from './reportWebVitals';
 import About from './components/About/About';
 import { BrowserRouter as Router,Routes ,Route} from 'react-router-dom';
 import Practice from './components/Practice/Practice';
+import Login from './components/Login/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +31,7 @@ root.render(
     <Route path="/practice" element= {<Practice/>}/>
     <Route path= "contact" element= {<Contact/>}/>
     <Route path="/about" element= {<About/>}/>
+    <Route path="/login" element= {<Login/>}/>
   </Routes>
  </Router>
 );
