@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lobster&display=swap');
-*{
+.title{
 font-family: 'Lobster', cursive;
 
 }
 
 .containerBig {
-  background: #01A892;
+  background-color: #01A892;
   position: absolute;
   top:0;
     left:0;
@@ -34,6 +34,7 @@ font-family: 'Lobster', cursive;
 
 
 .header{
+  font-family: 'Lobster', cursive;
   display: flex;
   justify-content: center;
   font-weight: 100;
@@ -41,6 +42,7 @@ font-family: 'Lobster', cursive;
 }
 
 .underHeader {
+  font-family: 'Lobster', cursive;
   display: flex;
   justify-content: center;
   font-weight: 100;

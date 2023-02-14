@@ -23,7 +23,7 @@
 
 }
 
-.text{
+.textP{
     position: absolute;
     z-index: 1;
     top: 30%;
@@ -53,3 +53,47 @@
     border: 5px solid  #252d4a !important;
    
 }
+
+@media only screen and (max-width: 1110px) {
+    .textP {
+     font-size: 50px;
+    }
+ 
+    
+   }
+
+   @media only screen and (max-width: 874px) {
+    .textP {
+     font-size: 40px;
+    }
+ 
+    
+   }
+
+   @media only screen and (max-width: 800px) {
+    .textP {
+     font-size: 30px;
+    }
+
+    canvas {
+        aspect-ratio: auto 375 / 667;
+    }
+ 
+    
+   }
+
+   @media only screen and (max-width: 503px) {
+    .textP {
+     font-size: 20px;
+    }
+
+    .button{
+        left: 47%;
+    }
+
+    canvas {
+        aspect-ratio: auto 375 / 667;
+    }
+ 
+    
+   }

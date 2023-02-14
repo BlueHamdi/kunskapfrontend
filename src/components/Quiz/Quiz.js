@@ -44,7 +44,9 @@ const Quiz = () => {
 
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
+	const [showGood, setShowGood] = useState(false);
 	const [score, setScore] = useState(0);
+	
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
@@ -58,6 +60,10 @@ const Quiz = () => {
 		} else {
 			setShowScore(true);
 		}
+    
+		if (score === 4)
+		setShowGood(showGood);
+
 	};
 	const audioRef = useRef(null);
 	const [isPlaying, setIsPlaying] = useState(true);

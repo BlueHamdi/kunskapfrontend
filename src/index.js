@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Play from './components/Play/Play';
-import ScoreFetching from './components/ScoreFetching';
+import Scorefetching from './components/ScoreFetching';
+import Datafetching from './components/ScoreFetching';
 import Contact from './components/Contact/Contact';
 import Instruction from './components/Instruction/Instruction';
 import Quiz from './components/Quiz/Quiz';
@@ -19,7 +20,9 @@ root.render(
   <Route exact path="/instruction" element={<Instruction/>} />
     <Route path="/quiz" element={<Quiz/>} />
     <Route path="/contact" element={<Contact/>} />
-    <Route path="/score" element={<ScoreFetching/>} />
+    <Route path="/score" element={<Scorefetching/>} />
+    <Route path="/score" element={<Scorefetching/>} />
+    <Route path="/ScoreFetching" element= {<Datafetching/>}/>
     <Route exact path="/practice" element={<Practice/>} />
     <Route path="/instruction" element={<Instruction/>} />
     <Route path='/' element= {<App/>}/>

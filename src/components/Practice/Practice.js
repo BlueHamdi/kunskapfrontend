@@ -66,7 +66,7 @@ const Practice = () => {
     <div className={styles.container}>
        <audio ref={audioRef} src={'/Audio/Sound.mp3'} />
       <canvas ref={canvasRef} id="code" style={{border: "1px solid black"}} />
-      <div className={styles.text}>Välommen till</div>
+      <div className={styles.textP}>Välkommen till</div>
       <div className='button'>
       <button className={styles.button} onClick={handleButtonClick}>Practice Mode</button>
       </div>

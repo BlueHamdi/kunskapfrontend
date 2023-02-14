@@ -22,7 +22,7 @@ const Instruction = () => {
             <p className='text'> 
                  Practice sidan är en del av en hemsida där du kan träna på att lösa matteuppgifter. <br/>
                   Genom att öva på sidan kan du förbättra din förståelse och kunskap inom matematik. <br/>
-                  &nbsp;&nbsp;&nbsp; Förvänta dig en interaktiv och lärande upplevelse där du kan utmana dig själv <br/>
+                  Förvänta dig en interaktiv och lärande upplevelse där du kan utmana dig själv <br/>
             </p>
             <p className='text2'>
             och utveckla dina färdigheter.

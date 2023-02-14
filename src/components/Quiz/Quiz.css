@@ -20,11 +20,11 @@ body {
 
 .app {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #b9cec1;
-  width: 700px;
+  width: 600px;
   min-height: 300px;
   border-radius: 15px;
   padding: 20px;
@@ -37,6 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 15%;
+  color: #000000;
 }
 
 /* QUESTION/TIMER/LEFT SECTION */
@@ -151,4 +152,14 @@ button svg {
 
 .music-button.paused:hover {
   background-color: #e8ebf3;
+}
+@media only screen and (max-width: 650px) {
+  .app {
+    width: 300px;
+  }
+  .title2 {
+   padding-left: 0.9rem;
+   font-size: 10px;
+  }
+
 }
