@@ -1,8 +1,13 @@
 import React from 'react';
 import './Contact.css';
+import Navbar from '../Navbar/Navbar'; 
 
 const Contact = () => {
   return (
+    <div>
+    <div className='navbar'>
+    <Navbar/>
+    </div>
     <div className="contact-info-container">
       <h2 className="contact-info-header">Contact Us</h2>
       <div className="contact-info-details">
@@ -11,6 +16,7 @@ const Contact = () => {
         <p><strong>Address:</strong> Yrkeshögskola Newton</p>
         <p className="contact-info-support-text">For help, please email us at <a href="mailto:kunskapsvarvet@help.com" className="contact-info-support-link">kunskapsvarvet@help.com</a></p>
       </div>
+    </div>
     </div>
   );
 };

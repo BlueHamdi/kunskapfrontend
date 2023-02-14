@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Play.css"; 
+import Navbar from '../Navbar/Navbar'; 
 
 const Game = () => {
     const [difficulty, setDifficulty] = useState(null);
@@ -68,6 +69,10 @@ const Game = () => {
   
     return (
       <div>
+        <div className='navbar'>
+        <Navbar/>
+        </div>
+      <div>
         {difficulty === null && !gameEnded && (
           <div>
             <h2>Select a Difficulty</h2>
@@ -96,6 +101,8 @@ const Game = () => {
     </div>
   )}
 </div>
+</div>
+
 
 );
 };

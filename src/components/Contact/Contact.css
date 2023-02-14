@@ -18,3 +18,11 @@
   .contact-info-support-link {
     color: #333;
   }
+
+  .navbar {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+  }
