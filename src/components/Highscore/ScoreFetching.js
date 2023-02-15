@@ -2,8 +2,6 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import './Scorefetching.css';
 
-
-
 function Scorefetching() {
   const [posts, setPosts] = useState([]);
 

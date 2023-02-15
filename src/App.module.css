@@ -1,76 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lobster&display=swap');
-*{
-font-family: 'Lobster', cursive;
-
-}
-
 .containerBig {
-  background: #01A892;
-  position: absolute;
-  top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    height:100%;
-    width:100%;
-    padding-top: 20px;
-    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.containerS{
-  background: rgb(255, 255, 255);
-  border-radius: 30px;
-  position:absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    height:85%;
-    width:90%;
-    margin:auto; 
-  
+.containerS {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px;
 }
 
-
-.header{
-  display: flex;
-  justify-content: center;
-  font-weight: 100;
-  color: rgb(85, 34, 107)
+.header {
+  font-size: 3rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #333333;
 }
 
 .underHeader {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #333333;
+}
+
+.images {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ffffff;
+  border-radius: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-weight: 100;
-  color: rgb(215, 112, 23)
+  align-items: center;
 }
 
-/* .bubble{
-  display: flex;
-  justify-content:flex-end;
-  gap: 25rem;
-   margin: auto;
- 
-} */
-
-.images{
-  display:flex;
-  justify-content: space-between;
+.text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
 }
-
-.img{
- width: 200px;
- height: auto;
- border-radius: 30px;
- margin: 2rem;
- 
-}
-
-.text{
-  font-family: 'Crimson Text', serif;
-  color: gray;
-}
-
-

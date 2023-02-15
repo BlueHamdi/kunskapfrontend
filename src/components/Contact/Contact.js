@@ -1,6 +1,7 @@
-import axios from "axios";
+
 import React, { useState, useEffect } from "react";
 import './Contact.css';
+import axios from "axios";
 
 
 function Contact() {
@@ -17,19 +18,23 @@ function Contact() {
           console.log(err);
         });
     }, []);
+  
+    return (
+        <div>
+          <h1>Contact Us</h1>
+          <ul>
+            {posts.map(post => (
+              <li key={post.id}>
+                <p>{post.Address}</p>
+                <p>{post.Email}</p>
+                <p>{post.PhoneNumber}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    }
     
-
-  return (
-    <div className="contact-info-container">
-      <h2 className="contact-info-header">Contact Us</h2>
-      <div className="contact-info-details">
-        <p><strong>Email:</strong> Kunskapsvarvet@gmail.com</p>
-        <p><strong>Phone:</strong> (46) xxx-xxxx</p>
-        <p><strong>Address:</strong> Yrkeshögskola Newton</p>
-        <p className="contact-info-support-text">For help, please email us at <a href="mailto:kunskapsvarvet@help.com" className="contact-info-support-link">kunskapsvarvet@help.com</a></p>
-      </div>
-    </div>
-  );
-};
-
+    
+  
 export default Contact;
