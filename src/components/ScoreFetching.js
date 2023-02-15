@@ -19,7 +19,7 @@ function Scorefetching() {
       });
   }, []);
   const top10 = posts
-    .sort((a, b) => b.UserScore - a.UserScore)
+    .sort((b, a) => b.UserScore - a.UserScore)
     .slice(0, 10);
 
   return (
